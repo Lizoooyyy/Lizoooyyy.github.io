@@ -1,9 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
-<title> Задание 1 </title>
  <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Задание 2 </title>
+ <link rel="stylesheet" href="/styles.css">
+ <!-- Не получается подключить css, поэтому буду писать здесь((((( --!>
+ <style>
+   body{
+	background-color: lightblue !important;
+	margin: 0;
+	font-family: Arial;
+	}
+   header{
+	background-color: #2c3e70;
+	color: white;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+	}
+   nav{
+	background-color: #2c3e90;
+	width: 150%;
+	}
+  nav ul{
+	list-style: none;
+	padding: 8px 0;
+	display: flex;
+	justify-content: center;
+	max-width: 960px;
+	margin: 0 auto;
+	}
+  nav li{
+	margin: 0 45px;
+	}
+  nav a{
+	color: white;
+	display: block;
+	}
+  main {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+  table{
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+	background-color: white;
+	border: 2px solid #3498db;
+	}
+  #main-table th a {
+   	 color: white !important;
+   	 text-decoration: none;
+   	 display: block;
+  	  padding: 10px;
+	}
+   th, td {
+            border: 2px solid #3498db;
+            padding: 15px;
+            text-align: center;
+        }
+   th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+  tr.even {
+            background-color: #ecf0f1;
+        }
+  tr.odd {
+            background-color: #bdc3c7;
+        }
+  tfoot td {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+        }
+  footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+ </style>
  <body>
- <ol> 
+<ol> 
   <li><a href="http://kubsu.ru/">КубГУ</a> </li>
   <li><a href="https://kubsu.ru/">КубГУ</a> </li>
   <li><img src="image.jpg" alt="Цветок" style="width: 600px;" /></li> 
@@ -31,7 +114,63 @@
   <li><a href="ftp://username:password@example.com/path/to/file">с FTP</a></li>
  </ol> 
 
-    <h3 id="form-section">Форма обратной связи</h3>
+   <header>
+        <h1>Моя таблица</h1>
+	<img src="image.png" alt="Шапка сайта" class="header-image">
+   </header>
+   <nav>
+        <ul>
+            <li><a href="http://kubsu.ru/">Главная</a></li>
+            <li><a href="#">Таблицы</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+  <table id="main-table">
+   <thead>
+    <tr>
+     <th>Колонка 1</th>
+     <th>Колонка 2</th>
+     <th>Колонка 3</th>
+     <th>Колонка 4</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td colspan="2">Ячейка 1-2 объединённая</td>
+     <td>Ячейка 3</td>
+     <td>Ячейка 4</td>
+    </tr>
+    <tr class="odd">
+     <td>Ячейка 5</td>
+     <td colspan="2" rowspan="2">Объеденённая ячейка 6-7</td>
+     <td>Ячейка 8</td>
+    </tr>
+    <tr class="even">
+     <td>Ячейка 9</td>
+     <td>Ячейка 10</td>
+    </tr>
+    <tr class="odd">
+     <td>Ячейка 11</td>
+     <td>Ячейка 12</td>
+     <td colspan="2">Объединённая ячейка 13-14</td>
+    </tr>
+    <tr class="even">
+     <td colspan="4">Полностью объединённая строка</td>
+    </tr>
+    <tr class="odd">
+     <td>Ячейка 16</td>
+     <td>Ячейка 17</td>
+     <td>Ячейка 18</td>
+     <td>Ячейка 19</td>
+    </tr>
+   </tbody>
+   <tfoot>
+    <tr>
+     <td colspan="4">Сергей Синица - Таблица с объединёнными ячейками</td>
+    </tr>
+   </tfoot>
+  </table>
+<h3 id="form-section">Форма обратной связи</h3>
     <form action="/submit" method="post">
       <div class="form-group">
         <label for="fullname">ФИО:</label>
@@ -91,6 +230,9 @@
       </div>
       <button type="submit">Сохранить</button>
     </form>
-</body>
-
-</html>
+</table>
+  <footer>
+   <p>&copy; 2025 Мой сайт </p>
+  </footer>
+ </body>
+ </head>
