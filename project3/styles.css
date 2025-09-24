@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Предотвращает горизонтальный скролл */
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+/* Header */
+.header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Navigation - исправленная версия */
+.navigation {
+    background: #34495e;
+    width: 100%;
+    overflow: hidden; /* Предотвращает выход за границы */
+}
+
+.navigation .container {
+    padding: 0; /* Убираем отступы у контейнера навигации */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Вертикальное меню */
+    width: 100%; /* Занимает всю ширину */
+}
+
+.nav-menu li {
+    border-bottom: 1px solid #4a6278;
+    width: 100%; /* Каждый пункт на всю ширину */
+}
+
+.nav-menu li:last-child {
+    border-bottom: none;
+}
+
+.nav-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 15px; /* Отступы слева/справа как у контейнера */
+    text-align: center;
+    transition: background 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-menu a:hover {
+    background: #4a6278;
+}
+
+/* Main content */
+.main {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Используем order для изменения порядка отображения */
+.table-section {
+    order: 1; /* Таблица ПЕРВОЙ на мобильных */
+}
+
+.links-section {
+    order: 2; /* Ссылки ВТОРЫМИ на мобильных */
+}
+
+/* Table styles */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    table-layout: fixed; /* Фиксированная ширина таблицы */
+}
+
+.data-table th,
+.data-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word; /* Перенос длинных слов */
+}
+
+.data-table th {
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+.data-table tr:hover {
+    background: #f8f9fa;
+}
+
+/* Links section */
+.links-section {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.links-list {
+    list-style: none;
+}
+
+.links-list li {
+    margin-bottom: 0.5rem;
+}
+
+.links-list a {
+    color: #3498db;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.links-list a:hover {
+    background: #ecf0f1;
+}
+
+/* Footer */
+.footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: 2rem;
+}
