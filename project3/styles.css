@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-    overflow-x: hidden; /* Предотвращает горизонтальный скролл */
+    overflow-x: hidden;
 }
 
 .container {
@@ -18,7 +18,6 @@ body {
     padding: 0 15px;
 }
 
-/* Header */
 .header {
     background: #2c3e50;
     color: white;
@@ -32,27 +31,26 @@ body {
     text-align: center;
 }
 
-/* Navigation - исправленная версия */
 .navigation {
     background: #34495e;
     width: 100%;
-    overflow: hidden; /* Предотвращает выход за границы */
+    overflow: hidden; 
 }
 
 .navigation .container {
-    padding: 0; /* Убираем отступы у контейнера навигации */
+    padding: 0; 
 }
 
 .nav-menu {
     list-style: none;
     display: flex;
-    flex-direction: column; /* Вертикальное меню */
-    width: 100%; /* Занимает всю ширину */
+    flex-direction: column; 
+    width: 100%;
 }
 
 .nav-menu li {
     border-bottom: 1px solid #4a6278;
-    width: 100%; /* Каждый пункт на всю ширину */
+    width: 100%;
 }
 
 .nav-menu li:last-child {
@@ -63,7 +61,7 @@ body {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 1rem 15px; /* Отступы слева/справа как у контейнера */
+    padding: 1rem 15px;
     text-align: center;
     transition: background 0.3s;
     width: 100%;
@@ -74,7 +72,6 @@ body {
     background: #4a6278;
 }
 
-/* Main content */
 .main {
     width: 100%;
     padding: 1rem 0;
@@ -86,16 +83,14 @@ body {
     gap: 1rem;
 }
 
-/* Используем order для изменения порядка отображения */
 .table-section {
-    order: 1; /* Таблица ПЕРВОЙ на мобильных */
+    order: 1; 
 }
 
 .links-section {
-    order: 2; /* Ссылки ВТОРЫМИ на мобильных */
+    order: 2; 
 }
 
-/* Table styles */
 .data-table {
     width: 100%;
     border-collapse: collapse;
@@ -103,7 +98,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    table-layout: fixed; /* Фиксированная ширина таблицы */
+    table-layout: fixed;
 }
 
 .data-table th,
@@ -111,7 +106,7 @@ body {
     padding: 0.75rem;
     text-align: left;
     border-bottom: 1px solid #ddd;
-    word-wrap: break-word; /* Перенос длинных слов */
+    word-wrap: break-word; 
 }
 
 .data-table th {
@@ -124,7 +119,6 @@ body {
     background: #f8f9fa;
 }
 
-/* Links section */
 .links-section {
     background: white;
     padding: 1rem;
@@ -153,7 +147,6 @@ body {
     background: #ecf0f1;
 }
 
-/* Footer */
 .footer {
     background: #2c3e50;
     color: white;
@@ -162,3 +155,4 @@ body {
     width: 100%;
     margin-top: 2rem;
 }
+
