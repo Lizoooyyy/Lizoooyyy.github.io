@@ -162,7 +162,6 @@ img{
     background: #ecf0f1;
 }
 
-/* Footer */
 .footer {
     background: #2c3e50;
     color: white;
@@ -170,6 +169,112 @@ img{
     padding: 1rem 0;
     width: 100%;
     margin-top: 2rem;
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .logo {
+        text-align: left;
+        font-size: 1.8rem;
+    }
+    
+    .nav-menu {
+        flex-direction: row; 
+        justify-content: center;
+    }
+    
+    .nav-menu li {
+        border-bottom: none;
+        border-right: 1px solid #4a6278;
+    }
+    
+    .nav-menu li:last-child {
+        border-right: none;
+    }
+    
+    .nav-menu a {
+        padding: 1rem 1.5rem;
+    }
+    
+    .content {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .table-section {
+        order: 0;
+        flex: 3; 
+    }
+    
+    .links-section {
+        order: 0;
+        flex: 1; 
+    }
+    
+    .main {
+        padding: 2rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 30px;
+    }
+    
+    .logo {
+        font-size: 2rem;
+    }
+    
+    .nav-menu a {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .content {
+        gap: 3rem;
+    }
+    
+    .data-table {
+        font-size: 1.1rem;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 1rem;
+    }
+    
+    .main {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .logo {
+        font-size: 1.3rem;
+    }
+    
+    .nav-menu a {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .data-table {
+        font-size: 0.9rem;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 0.5rem;
+    }
 }
 
 
