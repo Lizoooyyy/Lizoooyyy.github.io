@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<title> Задание 1 </title>
+ <head>
+ <body>
+ <table>
+ <ol> 
+  <li><a href="http://kubsu.ru/">КубГУ</a> </li>
+  <li><a href="https://kubsu.ru/">КубГУ</a> </li>
+  <li><img src="image.jpg" alt="Цветок" style="width: 600px;" /></li> 
+  <li><a href="https://www.kubsu.ru/ru/studlist">КубГУ->списки</a> </li>
+  <li><a href="https://kubsu.ru/">КубГУ->Главная</a> </li>
+  <li><a href="https://kubsu.ru/news?year=2024&month=09&category=events">Новости событий за сентябрь 2024</a></li>
+  <li><a href="https://kubsu.ru/search?category=news&year=2024&sort=new">Новости 2024 года (сортировка по новизне)</a></li>
+  <li><a href="user.html?id=123">Профиль пользователя(выдуманный)</a></li>
+  <li><a href="https://www.kubsu.ru/ru/university.html">О нас</a></li>
+  <li><a href="about/history.html">История</a></li>
+  <li><a href="../faculties">Факультеты КубГУ (уровень выше)</a></li>
+  <li><a href="../../ru/education">Образование КубГУ (два уровня выше)</a></li>
+  <li>Посетите <a href="https://kubsu.ru/">наш сайт</a> для подробностей</li>
+  <li><a href="https://www.rbc.ru/politics/15/09/2025/68c42a6c9a79473f12f5fa59?ysclid=mfkulhpf46992137421">Глава 2 на сайте</a></li>
+  <li><img src="image.jpg" alt="Цветок" style="width: 600px;" usemap="Navigation" /></li>
+  
+  <map name="#Navigation">
+	<area shape="rect" coords="100, 100, 300, 300" href="#1-rect" alt="http://kubsu.ru/">
+	<area shape="circle" coords="100, 100, 30" href="#2-circle" alt="http://kubsu.ru/">
+  </map> 
+  <li><a href="">Тык</a></li>
+  <li><a>Добро пожаловать!</a></li>
+  <li><a href="https://kubsu.ru/secret-page" rel="nofollow">Секретная страница</a></li>
+  <li><a href="https://kubsu.ru/" rel="noindex">Временная страница</a></li>
+  <li><a href="ftp://username:password@example.com/path/to/file">с FTP</a></li>
+ </ol> 
+
+    <h3 id="form-section">Форма обратной связи</h3>
+    <form action="/submit" method="post">
+      <div class="form-group">
+        <label for="fullname">ФИО:</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="Введите ваше имя">
+      </div>
+      <div class="form-group">
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="example@mail.com">
+      </div>
+      <div class="form-group">
+        <label for="birthdate">Дата рождения:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+      </div>
+      <div class="form-group">
+        <label>Пол:</label>
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Мужской</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Женский</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="language">Любимый язык программирования:</label><br>
+        <select id="language" name="language" multiple size="5" required>
+          <option value="pascal">Pascal</option>
+          <option value="c">C</option>
+          <option value="cpp">C++</option>
+          <option value="javascript">JavaScript</option>
+          <option value="php">PHP</option>
+          <option value="python">Python</option>
+          <option value="java">Java</option>
+          <option value="haskel">Haskel</option>
+          <option value="clojure">Clojure</option>
+          <option value="prolog">Prolog</option>
+          <option value="scala">Scala</option>
+        </select><br>
+        <small>Для множественного выбора используйте Ctrl+ЛКМ</small>
+      </div>
+      <div class="form-group">
+        <label for="bio">Биография:</label><br>
+        <textarea id="bio" name="bio" rows="5" required placeholder="Расскажите о себе"></textarea>
+      </div>
+      <div class="form-group">
+        <div class="checkbox-group">
+          <input type="checkbox" id="agreement" name="agreement" required>
+          <label for="agreement">Ознакомлен(а)</label>
+        </div>
+      </div>
+      <button type="submit">Сохранить</button>
+    </form>
+</table>
+</body>
+</html>
