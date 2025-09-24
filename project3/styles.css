@@ -16,7 +16,7 @@ html, body {
 .container {
     width: 100%;
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0 10px;
     box-sizing: border-box;
 }
 
@@ -171,3 +171,4 @@ img{
     width: 100%;
     margin-top: 2rem;
 }
+
