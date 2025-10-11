@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function orderUpdate() {
-        if (currentSet.time === 1) {
+        if (currentSet.time == 1) {
             orderTime.value = currentSet.time + " час";
         } else if (currentSet.time < 5) {
             orderTime.value = currentSet.time + " часа";
@@ -123,3 +123,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('Все обработчики подключены успешно!');
 });
+
