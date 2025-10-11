@@ -95,3 +95,6 @@ let currentSet = {
     return optionPrice;
   },
 };
+console.log('Все обработчики подключены успешно!');
+});
+
