@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автошкола "Профи" - Выбор автомобиля</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Автошкола "Профи"</h1>
+        <p class="subtitle">Выберите автомобиль для обучения</p>
+        
+        <div class="gallery-container">
+            <div class="cars-slider">
+                <div class="car-slide">
+                    <img src="images/car1.jpg" alt="Kia Rio">
+                    <div class="car-info">
+                        <h3>Kia Rio</h3>
+                        <p>Коробка: Автомат</p>
+                        <p>Категория: B</p>
+                    </div>
+                </div>
+                <div class="car-slide">
+                    <img src="images/car2.jpg" alt="Hyundai Solaris">
+                    <div class="car-info">
+                        <h3>Hyundai Solaris</h3>
+                        <p>Коробка: Автомат</p>
+                        <p>Категория: B</p>
+                    </div>
+                </div>
+                <div class="car-slide">
+                    <img src="images/car3.jpg" alt="Lada Vesta">
+                    <div class="car-info">
+                        <h3>Lada Vesta</h3>
+                        <p>Коробка: Механика</p>
+                        <p>Категория: B</p>
+                    </div>
+                </div>
+                <div class="car-slide">
+                    <img src="images/car4.jpg" alt="Volkswagen Polo">
+                    <div class="car-info">
+                        <h3>Volkswagen Polo</h3>
+                        <p>Коробка: Механика</p>
+                        <p>Категория: B</p>
+                    </div>
+                </div>
+                <div class="car-slide">
+                    <img src="images/car5.jpg" alt="Skoda Rapid">
+                    <div class="car-info">
+                        <h3>Skoda Rapid</h3>
+                        <p>Коробка: Автомат</p>
+                        <p>Категория: B</p>
+                    </div>
+                </div>
+                <div class="car-slide">
+                    <img src="images/car6.jpg" alt="Renault Logan">
+                    <div class="car-info">
+                        <h3>Renault Logan</h3>
+                        <p>Коробка: Механика</p>
+                        <p>Категория: B</p>
+                    </div>
+                </div>
+                <div class="car-slide">
+                    <img src="images/car7.jpg" alt="Toyota Corolla">
+                    <div class="car-info">
+                        <h3>Toyota Corolla</h3>
+                        <p>Коробка: Автомат</p>
+                        <p>Категория: B</p>
+                    </div>
+                </div>
+                <div class="car-slide">
+                    <img src="images/car8.jpg" alt="Lada Granta">
+                    <div class="car-info">
+                        <h3>Lada Granta</h3>
+                        <p>Коробка: Механика</p>
+                        <p>Категория: B</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <div class="pager">
+                    <span class="pager-text">
+                        <span id="current-slide">1</span> / <span id="total-slides">3</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection-panel">
+            <div class="selected-car">
+                <h2>Выбранный автомобиль: <span id="selected-car-name">-</span></h2>
+                <button class="confirm-btn" id="confirm-btn" disabled>Подтвердить выбор</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

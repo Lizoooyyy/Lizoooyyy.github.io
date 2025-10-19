@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.gallery-container {
+    margin-bottom: 30px;
+}
+
+.cars-slider {
+    margin: 0 -10px 20px -10px;
+}
+
+.car-slide {
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none !important; /* Убираем outline от Slick */
+}
+
+.car-slide:hover {
+    transform: translateY(-5px);
+}
+
+/* Используем отдельный класс для выделения вместо slick-current */
+.car-slide.selected {
+    background: #f0fff4 !important;
+    border-radius: 10px !important;
+    border: 2px solid #28a745 !important;
+}
+
+.car-slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+}
+
+.car-info {
+    padding: 0 5px;
+}
+
+.car-info h3 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.car-info p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+
+/* Slick Slider Custom Styles */
+.slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+.slick-next {
+    right: -50px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 40px;
+    color: #2c3e50;
+    opacity: 0.7;
+}
+
+.slick-prev:hover:before, .slick-next:hover:before {
+    opacity: 1;
+}
+
+.slick-dots {
+    bottom: -40px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #bdc3c7;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #2c3e50;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Увеличиваем отступ из-за dots */
+}
+
+.pager {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pager-text {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.selection-panel {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    border: 2px dashed #dee2e6;
+    margin-top: 20px;
+}
+
+.selected-car h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.confirm-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.confirm-btn:hover:not(:disabled) {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+.confirm-btn:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .car-slide img {
+        height: 180px;
+    }
+    
+    .slick-prev {
+        left: -30px;
+    }
+    
+    .slick-next {
+        right: -30px;
+    }
+    
+    .slick-prev:before, .slick-next:before {
+        font-size: 30px;
+    }
+    
+    .slider-controls {
+        margin-top: 30px;
+    }
+    /* Добавляем в конец файла */
+.car-slide.selected {
+    background: #f0fff4 !important;
+    border-radius: 10px !important;
+    border: 2px solid #28a745 !important;
+    transform: scale(0.95) !important;
+    z-index: 5 !important;
+    position: relative !important;
+}
+
+/* Убираем любые трансформации от Slick */
+.car-slide.slick-active {
+    transform: none !important;
+}
+
+.car-slide {
+    transition: all 0.3s ease !important;
+}
+}
+
+/* Планшеты */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .car-slide img {
+        height: 180px;
+    }
+
+}
