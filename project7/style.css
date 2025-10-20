@@ -45,20 +45,6 @@ h1 {
 
 .car-slide {
     padding: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    outline: none !important; /* Убираем outline от Slick */
-}
-
-.car-slide:hover {
-    transform: translateY(-5px);
-}
-
-/* Используем отдельный класс для выделения вместо slick-current */
-.car-slide.selected {
-    background: #f0fff4 !important;
-    border-radius: 10px !important;
-    border: 2px solid #28a745 !important;
 }
 
 .car-slide img {
@@ -88,8 +74,6 @@ h1 {
     text-align: center;
 }
 
-
-/* Slick Slider Custom Styles */
 .slick-prev, .slick-next {
     width: 40px;
     height: 40px;
@@ -130,7 +114,7 @@ h1 {
 .slider-controls {
     display: flex;
     justify-content: center;
-    margin-top: 40px; /* Увеличиваем отступ из-за dots */
+    margin-top: 40px;
 }
 
 .pager {
@@ -145,18 +129,59 @@ h1 {
     font-size: 1.1rem;
 }
 
+.car-slide {
+    position: relative;
+    padding: 10px;
+}
+
+.select-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(40, 167, 69, 0.9);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    opacity: 0;
+    z-index: 2;
+}
+
+.car-slide:hover .select-btn {
+    opacity: 1;
+}
+
+.select-btn:hover {
+    background: #28a745;
+    transform: translateX(-50%) scale(1.05);
+}
+
+.car-slide.selected {
+    border: 3px solid #28a745;
+    border-radius: 10px;
+}
+
+.car-slide.selected .select-btn {
+    opacity: 1;
+    background: #28a745;
+}
+
 .selection-panel {
     background: #f8f9fa;
     border-radius: 10px;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
+    margin-top: 30px;
     border: 2px dashed #dee2e6;
-    margin-top: 20px;
 }
 
 .selected-car h2 {
     color: #2c3e50;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 1.3rem;
 }
 
@@ -179,10 +204,8 @@ h1 {
 .confirm-btn:disabled {
     background: #6c757d;
     cursor: not-allowed;
-    transform: none;
 }
 
-/* Мобильная версия */
 @media (max-width: 768px) {
     .container {
         padding: 20px;
@@ -211,30 +234,10 @@ h1 {
     .slider-controls {
         margin-top: 30px;
     }
-    /* Добавляем в конец файла */
-.car-slide.selected {
-    background: #f0fff4 !important;
-    border-radius: 10px !important;
-    border: 2px solid #28a745 !important;
-    transform: scale(0.95) !important;
-    z-index: 5 !important;
-    position: relative !important;
 }
 
-/* Убираем любые трансформации от Slick */
-.car-slide.slick-active {
-    transform: none !important;
-}
-
-.car-slide {
-    transition: all 0.3s ease !important;
-}
-}
-
-/* Планшеты */
 @media (max-width: 1024px) and (min-width: 769px) {
     .car-slide img {
         height: 180px;
     }
-
 }
