@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drupal-coder - Поддержка сайтов на Drupal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Hero -->
+    <header class="header">
+        <div class="header__background">
+            <video autoplay loop muted playsinline class="header__bg-video">
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="header__top">
+            <div class="header__logo">
+                <img src="images/header-logo.svg" alt="Drupal-coder">
+            </div>
+            
+            <nav class="header__nav">
+                <a href="#support" class="header__link header__link--active">Поддержка сайтов</a>
+                <div class="header__dropdown">
+                    <a href="#" class="header__link header__link--dropdown">
+                        Администрирование
+                        <img src="images/header-lang-arrow.svg" alt="▼" class="header__dropdown-arrow">
+                    </a>
+                    <div class="header__dropdown-menu">
+                        <a href="#" class="header__dropdown-item">МИГРАЦИЯ</a>
+                        <a href="#" class="header__dropdown-item">БЭКАПЫ</a>
+                        <a href="#" class="header__dropdown-item">АУДИТ БЕЗОПАСНОСТИ</a>
+                        <a href="#" class="header__dropdown-item">ОПТИМИЗАЦИЯ СКОРОСТИ</a>
+                        <a href="#" class="header__dropdown-item">ПЕРЕЕЗД НА HTTPS</a>
+                    </div>
+                </div>
+                <a href="#cases" class="header__link">Наши работы</a>
+                <a href="#reviews" class="header__link">Отзывы</a>
+                <a href="#plans" class="header__link">Тарифы</a>
+                <a href="#contacts" class="header__link">Контакты</a>
+            </nav>
+            
+            <div class="header__contacts">
+                <a href="tel:88002222673" class="header__phone">8 800 222-26-73</a>
+                <div class="header__lang">
+                    RU
+                    <img src="images/header-lang-arrow.svg" alt="▼" class="header__lang-arrow">
+                </div>
+            </div>
+        </div>
+        
+        <div class="header__hero">
+            <div class="header__hero-content">
+                <div class="header__hero-left">
+                    <h1 class="header__title">Поддержка сайтов на Drupal</h1>
+                    <p class="header__subtitle">Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности</p>
+                    <a href="#plans" class="btn btn--outline-white">Тарифы</a>
+                </div>
+                
+                <div class="header__hero-stats">
+                    <!-- Верхний ряд -->
+                    <div class="header__stat header__stat--first">
+                        <div class="header__stat-value"><span class="header__stat-hash">#</span><span class="header__stat-number">1</span></div>
+                        <img src="images/hero-cup-icon.png" alt="#1" class="header__stat-icon">
+                        <div class="header__stat-text">Drupal-разработчик<br>в России по версии Рейтинга Рунета</div>
+                    </div>
+                    <div class="header__stat">
+                        <div class="header__stat-value">3+</div>
+                        <div class="header__stat-text">средний опыт специалистов более 3 лет</div>
+                    </div>
+                    <div class="header__stat">
+                        <div class="header__stat-value">14</div>
+                        <div class="header__stat-text">лет опыта в сфере Drupal</div>
+                    </div>
+                    
+                    <!-- Нижний ряд -->
+                    <div class="header__stat">
+                        <div class="header__stat-value">200+</div>
+                        <div class="header__stat-text">модулей и тем в формате DrupalGive</div>
+                    </div>
+                    <div class="header__stat">
+                        <div class="header__stat-value">35 000</div>
+                        <div class="header__stat-text">часов поддержки сайтов на Drupal</div>
+                    </div>
+                    <div class="header__stat">
+                        <div class="header__stat-value">200+</div>
+                        <div class="header__stat-text">Проектов на поддержке</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section__title">13 лет совершенствуем<br>компетенции в Drupal<br>поддержке!</h2>
+            <p class="section__subtitle">Разрабатываем и оптимизируем модули, расширяем<br>функциональность сайтов, обновляем дизайн</p>
+            
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <img src="images/service-icon-1.svg" alt="Service 1">
+                    </div>
+                    <p class="service-card__text">Добавление информации на сайт, создание новых разделов</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <img src="images/service-icon-2.svg" alt="Service 2">
+                    </div>
+                    <p class="service-card__text">Разработка и оптимизация модулей сайта</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <img src="images/service-icon-3.svg" alt="Service 3">
+                    </div>
+                    <p class="service-card__text">Интеграция с CRM, 1C, платежными системами, любыми веб-сервисами</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <img src="images/service-icon-4.svg" alt="Service 4">
+                    </div>
+                    <p class="service-card__text">Любые доработки функционала и дизайна</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <img src="images/service-icon-5.svg" alt="Service 5">
+                    </div>
+                    <p class="service-card__text">Аудит и мониторинг безопасности Drupal сайтов</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <img src="images/service-icon-6.svg" alt="Service 6">
+                    </div>
+                    <p class="service-card__text">Миграция, импорт контента и апгрейд Drupal</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <img src="images/service-icon-7.svg" alt="Service 7">
+                    </div>
+                    <p class="service-card__text">Оптимизация и ускорение Drupal-сайтов</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <img src="images/service-icon-8.svg" alt="Service 8">
+                    </div>
+                    <p class="service-card__text">Веб-маркетинг, консультации и работы по SEO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Features -->
+    <section class="support" id="support">
+        <div class="support__background">
+            <img src="images/support-drupal-background.svg" alt="Drupal" class="support__drupal-logo">
+        </div>
+        <div class="support__cards-section">
+            <div class="container">
+                <div class="support__intro">
+                    <h2 class="section__title">Поддержка<br>от Drupal-coder</h2>
+                </div>
+                
+                <div class="support__grid">
+                <div class="support-card">
+                    <div class="support-card__number">01.</div>
+                    <h3 class="support-card__title">Постановка задачи по Email</h3>
+                    <p class="support-card__text">Удобная и привычная модель постановки задач, при которой задачи фиксируются и никогда не теряются.</p>
+                    <div class="support-card__icon">
+                        <img src="images/support-icon-1.svg" alt="Email">
+                    </div>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-card__number">02.</div>
+                    <h3 class="support-card__title">Система Helpdesk – отчетность, прозрачность</h3>
+                    <p class="support-card__text">Возможность посмотреть все заявки в работе и отработанные часы в личном кабинете через браузер.</p>
+                    <div class="support-card__icon">
+                        <img src="images/support-icon-2.svg" alt="Helpdesk">
+                    </div>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-card__number">03.</div>
+                    <h3 class="support-card__title">Расширенная техническая поддержка</h3>
+                    <p class="support-card__text">Возможность организации расширенной техподдержки с 6:00 до 22:00 без выходных.</p>
+                    <div class="support-card__icon">
+                        <img src="images/support-icon-3.svg" alt="24/7">
+                    </div>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-card__number">04.</div>
+                    <h3 class="support-card__title">Персональный менеджер проекта</h3>
+                    <p class="support-card__text">Ваш менеджер проекта всегда в курсе текущего состояния проекта и в любой момент готов ответить на любые вопросы.</p>
+                    <div class="support-card__icon">
+                        <img src="images/support-icon-4.svg" alt="Manager">
+                    </div>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-card__number">05.</div>
+                    <h3 class="support-card__title">Удобные способы оплаты</h3>
+                    <p class="support-card__text">Безналичный расчет по договору или электронные деньги: WebMoney, Яндекс.Деньги, Paypal.</p>
+                    <div class="support-card__icon">
+                        <img src="images/support-icon-5.svg" alt="Payment">
+                    </div>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-card__number">06.</div>
+                    <h3 class="support-card__title">Работаем с SLA и NDA</h3>
+                    <p class="support-card__text">Работа в рамках соглашений о конфиденциальности и об уровне качества работ.</p>
+                    <div class="support-card__icon">
+                        <img src="images/support-icon-6.svg" alt="SLA NDA">
+                    </div>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-card__number">07.</div>
+                    <h3 class="support-card__title">Штатные специалисты</h3>
+                    <p class="support-card__text">Надежные штатные специалисты, никаких фрилансеров.</p>
+                    <div class="support-card__icon">
+                        <img src="images/support-icon-7.svg" alt="Team">
+                    </div>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-card__number">08.</div>
+                    <h3 class="support-card__title">Удобные каналы связи</h3>
+                    <p class="support-card__text">Консультации по телефону, скайпу, в мессенджерах.</p>
+                    <div class="support-card__icon">
+                        <img src="images/support-icon-8.svg" alt="Contact">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="support__expertise-section">
+            <div class="support__expertise-wrapper">
+                <div class="support__laptop">
+                    <img src="laptop.png" alt="Drupal Dashboard">
+                </div>
+                
+                <div class="support__expertise-content">
+                    <h2 class="support__expertise">Экспертиза в Drupal,<br>опыт 14 лет!</h2>
+                    
+                    <div class="support__badges">
+                        <div class="badge">
+                            <div class="badge__line"></div>
+                            <p class="badge__text">Только Drupal сайты, не берем на поддержку сайты на других CMS!</p>
+                        </div>
+                        <div class="badge">
+                            <div class="badge__line"></div>
+                            <p class="badge__text">Только системный подход – контроль версий, резервирование и тестирование!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="plans" id="plans">
+        <img src="D-background.svg" alt="D" class="plans__d-logo">
+        <div class="container">
+            <h2 class="section__title">Тарифы</h2>
+            
+            <div class="plans__grid">
+                <div class="plan-card">
+                    <div class="plan-card__header">
+                        <div class="plan-card__badge">Стартовый</div>
+                        <div class="plan-card__price">
+                            <span class="plan-card__amount">2000</span>
+                            <span class="plan-card__currency">₽</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="plan-card__features">
+                        <li class="plan-card__feature plan-card__feature--checked">Предоплата от 2 часов</li>
+                        <li class="plan-card__feature plan-card__feature--checked">Стандартное время реакции</li>
+                        <li class="plan-card__feature plan-card__feature--checked">Неиспользованные оплаченные часы переносятся на следующий месяц</li>
+                        <li class="plan-card__feature plan-card__feature--disabled">Консультации и работы по SEO</li>
+                        <li class="plan-card__feature plan-card__feature--disabled">Услуги дизайнера</li>
+                    </ul>
+                    
+                    <a href="#contacts" class="plan-card__link">Оставить заявку!</a>
+                </div>
+                
+                <div class="plan-card plan-card--featured">
+                    <div class="plan-card__header">
+                        <div class="plan-card__badge plan-card__badge--accent">Бизнес</div>
+                        <div class="plan-card__price">
+                            <span class="plan-card__amount">2000</span>
+                            <span class="plan-card__currency">₽</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="plan-card__features">
+                        <li class="plan-card__feature plan-card__feature--checked">Предоплата от 10 часов</li>
+                        <li class="plan-card__feature plan-card__feature--checked">Высокое время реакции – до 2 рабочих дней</li>
+                        <li class="plan-card__feature plan-card__feature--checked">Неиспользованные часы не переносятся</li>
+                        <li class="plan-card__feature plan-card__feature--checked">Консультации и работы по SEO</li>
+                        <li class="plan-card__feature plan-card__feature--checked">Услуги дизайнера</li>
+                    </ul>
+                    
+                    <a href="#contacts" class="plan-card__link plan-card__link--primary">Оставить заявку!</a>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="plan-card__header">
+                        <div class="plan-card__badge">VIP</div>
+                        <div class="plan-card__price">
+                            <span class="plan-card__amount">1800</span>
+                            <span class="plan-card__currency">₽</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="plan-card__features">
+                        <li class="plan-card__feature plan-card__feature--checked">Предоплата от 100 часов</li>
+                        <li class="plan-card__feature plan-card__feature--checked">Максимальное время реакции – в день обращения</li>
+                        <li class="plan-card__feature plan-card__feature--checked">Неиспользованные часы не переносятся</li>
+                        <li class="plan-card__feature plan-card__feature--checked">Консультации и работы по SEO</li>
+                        <li class="plan-card__feature plan-card__feature--checked">Услуги дизайнера</li>
+                    </ul>
+                    
+                    <a href="#contacts" class="plan-card__link">Оставить заявку!</a>
+                </div>
+            </div>
+            
+            <div class="plans__bottom-text">
+                <p class="plans__subtitle-text">Вам не подходят наши тарифы? Оставьте заявку и мы<br>предложим вам индивидуальные условия!</p>
+                <a href="#contacts" class="plans__bottom-link">Получить индивидуальный план</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases -->
+    <section class="cases" id="cases">
+        <div class="container">
+            <h2 class="section__title">Последние кейсы</h2>
+            
+            <div class="cases__grid">
+                <!-- 1. Маленькая -->
+                <div class="case-card">
+                    <div class="case-card__image">
+                        <img src="images/case-1.png" alt="Case">
+                    </div>
+                    <div class="case-card__content">
+                        <h3 class="case-card__title">Настройка выгрузки YML для Яндекс.Маркета</h3>
+                        <div class="case-card__date">22.04.2019</div>
+                        <p class="case-card__text">Эти слова совершенно справедливы, однако гипнотический рифф продолжает паузный пласт.</p>
+                    </div>
+                </div>
+                
+                <!-- 2. Большая (занимает 2 колонки) -->
+                <div class="case-card case-card--large">
+                    <div class="case-card__image">
+                        <img src="images/case-2.png" alt="Case">
+                    </div>
+                    <div class="case-card__content">
+                        <h3 class="case-card__title">Настройка выгрузки YML для Яндекс.Маркета</h3>
+                    </div>
+                </div>
+                
+                <!-- 3. Маленькая с текстом на изображении -->
+                <div class="case-card case-card--overlay">
+                    <div class="case-card__image">
+                        <img src="images/case-3.png" alt="Case">
+                    </div>
+                    <div class="case-card__content">
+                        <h3 class="case-card__title">Настройка выгрузки YML для Яндекс.Маркета</h3>
+                        <div class="case-card__date">22.04.2019</div>
+                    </div>
+                </div>
+                
+                <!-- 4. Маленькая с текстом на изображении -->
+                <div class="case-card case-card--overlay">
+                    <div class="case-card__image">
+                        <img src="images/case-4.png" alt="Case">
+                    </div>
+                    <div class="case-card__content">
+                        <h3 class="case-card__title">Настройка выгрузки YML для Яндекс.Маркета</h3>
+                        <div class="case-card__date">22.04.2019</div>
+                    </div>
+                </div>
+                
+                <!-- 5. Маленькая -->
+                <div class="case-card">
+                    <div class="case-card__image">
+                        <img src="images/case-large-5.png" alt="Case">
+                    </div>
+                    <div class="case-card__content">
+                        <h3 class="case-card__title">Настройка выгрузки YML для Яндекс.Маркета</h3>
+                        <div class="case-card__date">22.04.2019</div>
+                        <p class="case-card__text">Эти слова совершенно справедливы, однако гипнотический рифф продолжает паузный пласт.</p>
+                    </div>
+                </div>
+                
+                <!-- 6. Большая (занимает 2 колонки) -->
+                <div class="case-card case-card--large">
+                    <div class="case-card__image">
+                        <img src="images/case-large-6.png" alt="Case">
+                    </div>
+                    <div class="case-card__content">
+                        <h3 class="case-card__title">Настройка выгрузки YML для Яндекс.Маркета</h3>
+                    </div>
+                </div>
+                
+                <!-- 7. Маленькая с текстом на изображении -->
+                <div class="case-card case-card--overlay">
+                    <div class="case-card__image">
+                        <img src="images/case-1.png" alt="Case">
+                    </div>
+                    <div class="case-card__content">
+                        <h3 class="case-card__title">Настройка выгрузки YML для Яндекс.Маркета</h3>
+                        <div class="case-card__date">22.04.2019</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cases__more">
+                <button class="btn btn--outline-dark">Показать ещё</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section__title">Команда</h2>
+            
+            <div class="team__grid">
+                <div class="team-card">
+                    <div class="team-card__photo">
+                        <img src="images/team-member-1.png" alt="Лёша">
+                    </div>
+                    <h3 class="team-card__name">Лёша</h3>
+                    <p class="team-card__role">руководитель поддержки,<br>планирование задач</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-card__photo">
+                        <img src="images/team-member-5.png" alt="Сергей">
+                    </div>
+                    <h3 class="team-card__name">Сергей</h3>
+                    <p class="team-card__role">технический директор, 14 лет<br>опыт работы с Drupal</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-card__photo">
+                        <img src="images/team-member-3.png" alt="Ирина">
+                    </div>
+                    <h3 class="team-card__name">Ирина</h3>
+                    <p class="team-card__role">менеджер по работе<br>с клиентами, организация<br>оказания услуг</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-card__photo">
+                        <img src="images/team-member-3.png" alt="Даша">
+                    </div>
+                    <h3 class="team-card__name">Даша</h3>
+                    <p class="team-card__role">SEO, веб-маркетинг</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-card__photo">
+                        <img src="images/team-member-5.png" alt="Роман">
+                    </div>
+                    <h3 class="team-card__name">Роман</h3>
+                    <p class="team-card__role">инфраструктура веб-проектов</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-card__photo">
+                        <img src="images/team-member-5.png" alt="Вадим">
+                    </div>
+                    <h3 class="team-card__name">Вадим</h3>
+                    <p class="team-card__role">UX/UI дизайн</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" id="reviews">
+        <img src="images/Vector1.png" alt="Quote" class="reviews__quote reviews__quote--left">
+        <img src="images/Vector.png" alt="Quote" class="reviews__quote reviews__quote--right">
+        <div class="container">
+            <h2 class="section__title">Отзывы</h2>
+            
+            <div class="reviews__slider">
+                <div class="review-card review-card--active">
+                    <div class="review-card__avatar">
+                        <img src="images/review-avatar.png" alt="Avatar">
+                    </div>
+                    <h3 class="review-card__title">Команда Drupal Coder вызвала<br>только положительные<br>впечатления!</h3>
+                    <p class="review-card__author">Нуреев Александр, менеджер проекта Winamp&nbspRussian Community</p>
+                    
+                    <div class="review-card__controls">
+                        <button class="review-card__arrow review-card__arrow--prev">
+                            <img src="images/arrow-left.svg" alt="Previous">
+                        </button>
+                        <div class="review-card__counter">01 / 14</div>
+                        <button class="review-card__arrow review-card__arrow--next">
+                            <img src="images/arrow-right.svg" alt="Next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners" id="partners">
+        <div class="container">
+            <h2 class="section__title">С нами работают</h2>
+            <p class="section__subtitle">Десятки компаний доверяют нам самое ценное, что у них есть в интернете – свои сайты. Мы делаем всё, чтобы наше сотрудничество было долгим.</p>
+            
+            <div class="partners__grid">
+                <img src="images/partners-group-4.svg" alt="Partners" class="partners__image">
+            </div>
+            <div class="partners__grid partners__grid--second">
+                <img src="images/partners-group-3.svg" alt="Partners" class="partners__image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="webform" id="contacts">
+        <img src="images/D-flying.svg" alt="D" class="webform__d-top">
+        <div class="container">
+            <div class="webform__content">
+                <div class="webform__info">
+                    <h2 class="webform__title">Оставить заявку на поддержку сайта</h2>
+                    <p class="webform__text">Срочно нужна поддержка сайта? Ваша команда не успевает справиться самостоятельно или предыдущий подрядчик не справился с работой? Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!</p>
+                    
+                    <div class="webform__contacts">
+                        <div class="webform__contact">
+                            <img src="images/webform-phone-icon.svg" alt="Phone">
+                            <a href="tel:88002222673" class="webform__contact-phone">8 800 222-26-73</a>
+                        </div>
+                        
+                        <div class="webform__contact">
+                            <img src="images/webform-mail-icon.svg" alt="Email">
+                            <a href="mailto:info@drupal-coder.ru" class="webform__contact-link">info@drupal-coder.ru</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="webform__form">
+                    <input type="text" class="webform__input" placeholder="Ваше имя">
+                    <input type="tel" class="webform__input" placeholder="Телефон">
+                    <input type="email" class="webform__input" placeholder="E-mail">
+                    <textarea class="webform__textarea" placeholder="Ваш комментарий"></textarea>
+                    
+                    <label class="webform__checkbox">
+                        <input type="checkbox" checked>
+                        <span class="webform__checkbox-text">Отправляя заявку, я даю согласие на обработку своих<br>персональных данных</span>
+                    </label>
+                    
+                    <button type="submit" class="btn btn--primary btn--large">Оставить заявку!</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="images/D.png" alt="D" class="footer__d-bottom">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">Проект ООО «Инитлаб», Краснодар, Россия.</p>
+                <p class="footer__text">Drupal является зарегистрированной торговой маркой Dries Buytaert.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
