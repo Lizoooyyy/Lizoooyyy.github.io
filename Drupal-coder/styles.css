@@ -962,7 +962,7 @@ button {
 .plans__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 0;
     margin-bottom: 60px;
     position: relative;
     align-items: stretch;
@@ -996,6 +996,8 @@ button {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .plan-card:hover {
