@@ -415,7 +415,78 @@ function createScrollToTop() {
 
 createScrollToTop();
 
+class PlanSelector {
+    constructor() {
+        this.plans = document.querySelectorAll('.plan-card');
+        this.init();
+    }
+    
+    init() {
+        // Установить бизнес-тариф как выбранный по умолчанию
+        const defaultPlan = document.querySelector('.plan-card--featured');
+        if (defaultPlan && !defaultPlan.classList.contains('plan-card--selected')) {
+            defaultPlan.classList.add('plan-card--selected');
+        }
+        
+        // Добавить обработчики клика на все карточки
+        this.plans.forEach(plan => {
+            plan.addEventListener('click', (e) => {
+                // Не обрабатываем клики по ссылкам
+                if (e.target.tagName === 'A') return;
+                
+                this.selectPlan(plan);
+            });
+        });
+    }
+    
+    selectPlan(selectedPlan) {
+        // Убрать выделение со всех тарифов
+        this.plans.forEach(plan => {
+            plan.classList.remove('plan-card--selected');
+            
+            // Вернуть обычные кнопки
+            const btn = plan.querySelector('.plan-card__btn');
+            if (btn) {
+                btn.classList.remove('btn--primary');
+                btn.classList.add('btn--outline');
+            }
+        });
+        
+        // Добавить выделение выбранному тарифу
+        selectedPlan.classList.add('plan-card--selected');
+        
+        // Обновить кнопку выбранного тарифа
+        const selectedBtn = selectedPlan.querySelector('.plan-card__btn');
+        if (selectedBtn) {
+            selectedBtn.classList.remove('btn--outline');
+            selectedBtn.classList.add('btn--primary');
+        }
+        
+        // Плавная прокрутка к выбранному тарифу (на мобильных)
+        if (window.innerWidth <= 992) {
+            selectedPlan.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+        
+        // Отслеживание выбора (для аналитики)
+        this.trackSelection(selectedPlan.dataset.plan);
+    }
+    
+    trackSelection(planType) {
+        console.log(`Выбран тариф: ${planType}`);
+        // Здесь можно добавить Google Analytics, Яндекс.Метрику и т.д.
+    }
+}
+
+// Инициализация при загрузке страницы
+document.addEventListener('DOMContentLoaded', () => {
+    new PlanSelector();
+});
+
 // ===== Console Info =====
 console.log('%c Drupal-coder Website ', 'background: #F14D34; color: white; font-size: 16px; padding: 10px;');
 console.log('%c Developed with ❤️ ', 'color: #F14D34; font-size: 14px;');
+
 
