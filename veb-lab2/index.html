@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Лабораторная работа - HTTP запросы</title>
+    <meta charset="utf-8">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 { 
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        .section {
+            background: white;
+            margin: 30px 0;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .screenshot { 
+            margin: 30px 0; 
+            border: 2px solid #e0e0e0; 
+            padding: 20px;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+        .screenshot h3 { 
+            margin-top: 0; 
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        img { 
+            max-width: 100%; 
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .task-desc {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-family: 'Courier New', monospace;
+            border-left: 4px solid #3498db;
+        }
+        .command {
+            background: #2c3e50;
+            color: #2ecc71;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+        }
+        .url-link {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #3498db;
+        }
+        .url-link a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            word-break: break-all;
+        }
+        .url-link a:hover {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+        .check-btn {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .check-btn:hover {
+            background: #2ecc71;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Лабораторная работа: HTTP запросы</h1>
+    <p style="text-align: center; font-size: 1.2em;">Студент: u82312 </p>
+    
+    <!-- Проверка доступности страниц -->
+    <div class="section">
+        <h2>🔗 Проверка доступности файлов</h2>
+        
+        <div class="url-link">
+            <h3>Главная страница каталога:</h3>
+            <a href="http://u82312.kubsu-dev.ru/files/" target="_blank">http://u82312.kubsu-dev.ru/files/</a>
+        </div>
+        
+        <div class="url-link">
+            <h3>PHP информация:</h3>
+            <a href="http://u82312.kubsu-dev.ru/files/index.php" target="_blank">http://u82312.kubsu-dev.ru/files/index.php</a>
+       </div>
+        
+        <div class="url-link">
+            <h3>Тестовая HTML страница:</h3>
+            <a href="http://u82312.kubsu-dev.ru/files/test.html" target="_blank">http://u82312.kubsu-dev.ru/files/test.html</a>
+        </div>
+        
+        <div class="url-link">
+            <h3>Скачать file.tar.gz:</h3>
+            <a href="http://u82312.kubsu-dev.ru/files/file.tar.gz" target="_blank">http://u82312.kubsu-dev.ru/files/file.tar.gz</a>
+        </div>
+        
+        <div class="url-link">
+             <a href="http://u82312.kubsu-dev.ru/files/image.png" target="_blank">
+        <img src="image.png" alt="Моё фото" style="max-width: 200px; border: 2px solid #3498db; border-radius: 5px; padding: 3px;">
+    </a>
+    <p style="margin-top: 10px; color: #666;">
+        </div>
+    </div>
+    
+        
+        <div class="screenshot">
+            <h3>📸 Скриншот: Создание файлов</h3>
+            <a href="proverka1.png" target="_blank">
+                <img src="proverka1.png" alt="Создание файлов" title="Нажмите для увеличения">
+            </a>
+        </div>
+        
+        <div class="screenshot">
+            <h3>📸 Скриншот: php</h3>
+            <a href="proverka2.png" target="_blank">
+                <img src="proverka2.png" alt="Git инициализация" title="Нажмите для увеличения">
+            </a>
+        </div>
+        
+        <div class="screenshot">
+            <h3>📸 Скриншот: PHP info в браузере</h3>
+            <a href="proverka3.png" target="_blank">
+                <img src="proverka3.png" alt="PHP info" title="Нажмите для увеличения">
+            </a>
+        </div>
+    
+    <!-- HTTP запросы -->
+    <div class="section">
+        <h2>🌐 Выполнение HTTP запросов</h2>
+        
+        <div class="screenshot">
+            <h3>Задание 1: GET главной страницы (HTTP 1.0)</h3>
+            <div class="task-desc">
+                <strong>Команда:</strong> curl -vk --http1.0 https://kubsu-dev.ru/~u82312/files/
+            </div>
+            <a href="zad1.png" target="_blank">
+                <img src="zad1.png" alt="GET главной страницы" title="Нажмите для увеличения">
+            </a>
+        </div>
+        
+        <div class="screenshot">
+            <h3>Задание 2: GET test.html (HTTP 1.1)</h3>
+            <div class="task-desc">
+                <strong>Команда:</strong> curl -vk https://kubsu-dev.ru/~u82312/files/test.html
+            </div>
+            <a href="zad2.png" target="_blank">
+                <img src="zad2.png" alt="GET test.html" title="Нажмите для увеличения">
+            </a>
+        </div>
+        
+        <div class="screenshot">
+            <h3>Задание 3: Определение размера file.tar.gz</h3>
+            <div class="task-desc">
+                <strong>Команда:</strong> curl -vkI https://kubsu-dev.ru/~u82312/files/file.tar.gz
+            </div>
+            <a href="zad3.png" target="_blank">
+                <img src="zad3.png" alt="HEAD file.tar.gz" title="Нажмите для увеличения">
+            </a>
+        </div>
+        
+        <div class="screenshot">
+            <h3>Задание 4: Определение медиатипа image.png</h3>
+            <div class="task-desc">
+                <strong>Команда:</strong> curl -vkI https://kubsu-dev.ru/~u82312/files/image.png
+            </div>
+            <a href="zad4.png" target="_blank">
+                <img src="zad4.png" alt="HEAD image.png" title="Нажмите для увеличения">
+            </a>
+        </div>
+        
+        <div class="screenshot">
+            <h3>Задание 5: POST комментарий</h3>
+            <div class="task-desc">
+                <strong>Команда:</strong> curl -vk -X POST -d "comment=Test" https://kubsu-dev.ru/~u82312/files/index.php
+            </div>
+            <a href="zad5.png" target="_blank">
+                <img src="zad5.png" alt="POST комментарий" title="Нажмите для увеличения">
+            </a>
+        </div>
+        
+        <div class="screenshot">
+            <h3>Задание 6: Первые 100 байт file.tar.gz</h3>
+            <div class="task-desc">
+                <strong>Команда:</strong> curl -vk -r 0-99 https://kubsu-dev.ru/~u82312/files/file.tar.gz
+            </div>
+            <a href="zad6.png" target="_blank">
+                <img src="zad6.png" alt="Range запрос" title="Нажмите для увеличения">
+            </a>
+        </div>
+        
+        <div class="screenshot">
+            <h3>Задание 7: Определение кодировки index.php</h3>
+            <div class="task-desc">
+                <strong>Команда:</strong> curl -vkI https://kubsu-dev.ru/~u82312/files/index.php
+            </div>
+            <a href="zad7.png" target="_blank">
+                <img src="zad7.png" alt="HEAD index.php" title="Нажмите для увеличения">
+            </a>
+            <div style="background: #27ae60; color: white; padding: 10px; border-radius: 5px; margin-top: 15px;">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
