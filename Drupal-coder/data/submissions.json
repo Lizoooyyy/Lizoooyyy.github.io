@@ -1,0 +1,163 @@
+{
+  "users": [
+    {
+      "id": "59184ae9-4bdd-453e-891d-2c32a8b1eccf",
+      "login": "user_45429b00",
+      "password": "f15PriJxmHU",
+      "form": {
+        "name": "Petr Updated",
+        "phone": "+7 900 111 22 33",
+        "email": "petr.updated@example.com",
+        "comment": "edited",
+        "agreed": true
+      },
+      "createdAt": "2026-04-27T17:14:01.060Z",
+      "updatedAt": "2026-04-27T17:14:01.073Z"
+    },
+    {
+      "id": "3c918721-15cc-4652-8c14-2c3eb3e6c1e5",
+      "login": "user_63df36ab",
+      "password": "3bzPTd5Coyk",
+      "form": {
+        "name": "Olga",
+        "phone": "+7 911 555 44 33",
+        "email": "olga@example.com",
+        "comment": "xml",
+        "agreed": true
+      },
+      "createdAt": "2026-04-27T17:15:57.621Z",
+      "updatedAt": "2026-04-27T17:15:57.621Z"
+    },
+    {
+      "id": "0298dbc2-559c-4d0c-a271-3135f597362a",
+      "login": "user_206b6110",
+      "salt": "3d0ce7f196ac82d104ce2570",
+      "passwordHash": "8a66c8206425b9d45ac0064c6a00a11994ae230f0f1812f5895a4a5c03348259",
+      "form": {
+        "name": "Ivan Ivanov",
+        "phone": "+7 (999) 123-45-67",
+        "email": "ivan@example.com",
+        "comment": "ok",
+        "language": "JavaScript",
+        "agreed": true
+      },
+      "createdAt": "2026-04-27T17:43:21.736Z",
+      "updatedAt": "2026-04-27T17:43:21.736Z"
+    },
+    {
+      "id": "e1928319-4de1-4d62-8a56-14d55c0d7b38",
+      "login": "user_33d5cce2",
+      "salt": "1009aa330a00665ee2a9f0b1",
+      "passwordHash": "6c1a682914f0e2917d942d0c48589e363b75157b19c773da67a2406090a04166",
+      "form": {
+        "name": "Petr Petrov",
+        "phone": "+7 (911) 111-22-33",
+        "email": "petr@example.com",
+        "comment": "ok",
+        "language": "Python",
+        "agreed": true
+      },
+      "createdAt": "2026-04-27T17:43:26.406Z",
+      "updatedAt": "2026-04-27T17:43:26.406Z"
+    },
+    {
+      "id": "82c11ac6-7624-4aba-90f5-55fcceb4a814",
+      "login": "user_328e6bc7",
+      "salt": "a4211e5112ca5c96fc6bb5a8",
+      "passwordHash": "e94858df96ece3f67328c73248c990cb68aa1cb26a017091db612dbebeb434ed",
+      "form": {
+        "name": "Test User",
+        "phone": "+7 999 1112233",
+        "email": "t@example.com",
+        "comment": "ok",
+        "language": "Go",
+        "agreed": true
+      },
+      "createdAt": "2026-04-27T17:43:34.969Z",
+      "updatedAt": "2026-04-27T17:43:34.969Z"
+    },
+    {
+      "id": "0c511855-8005-4e76-90ff-7cc78f6fb258",
+      "login": "user_135cb749",
+      "salt": "4d01b701b458a54df68ec9ed",
+      "passwordHash": "2cc176cdf186e2acbfffc49d19af2c6bcb23f0a30f22d485c264a7aa909e4157",
+      "form": {
+        "name": "Login Test",
+        "phone": "+7 900 1112233",
+        "email": "logintest@example.com",
+        "comment": "new comment",
+        "language": "PHP",
+        "agreed": true
+      },
+      "createdAt": "2026-04-27T17:43:49.726Z",
+      "updatedAt": "2026-04-27T17:43:49.945Z"
+    },
+    {
+      "id": "70757ba2-fbc2-4414-b461-177c84f54414",
+      "login": "user_c41fbdc2",
+      "salt": "ab874df2cabd1353e1dc2771",
+      "passwordHash": "1e1f7018f5646ca61739282e932217b4184ee39ba8d51e429260ba1ae6b4a2c9",
+      "form": {
+        "name": "Demo User",
+        "phone": "+7 900 5554433",
+        "email": "demo.user@example.com",
+        "comment": "demo",
+        "agreed": true
+      },
+      "createdAt": "2026-04-27T17:51:47.766Z",
+      "updatedAt": "2026-04-27T17:51:47.766Z"
+    },
+    {
+      "id": "0e07c54e-5c50-4f86-b638-c4130b39a074",
+      "login": "user_26a97581",
+      "salt": "6d6935544e72e9e0caf86085",
+      "passwordHash": "0082ba0f571a6502ca1471a53f925848ab4733efec6498cf66b2c8ba578bddae",
+      "form": {
+        "name": "Demo User",
+        "phone": "+7 900 5554433",
+        "email": "demo.user@example.com",
+        "comment": "demo",
+        "agreed": true
+      },
+      "createdAt": "2026-04-27T17:52:03.218Z",
+      "updatedAt": "2026-04-27T17:52:03.218Z"
+    },
+    {
+      "id": "69f7441a-465e-4708-9286-fdd36f655a48",
+      "login": "user_92c1e542",
+      "salt": "3c2cd66a76430e01e2aeeedb",
+      "passwordHash": "26fa315fd86820562963d75ffc1817f48631dcc7d4817cbc46754cb05f187dcf",
+      "form": {
+        "name": "Fixed User",
+        "phone": "+7 900 2223344",
+        "email": "fixed.user@example.com",
+        "comment": "ok",
+        "agreed": true
+      },
+      "createdAt": "2026-04-27T18:12:43.268Z",
+      "updatedAt": "2026-04-27T18:12:43.268Z"
+    },
+    {
+      "id": "929c7d49-4264-4a6a-bff3-5120e7882306",
+      "login": "user_f016b0de",
+      "salt": "9bfceed7809959c756c8d767",
+      "passwordHash": "ba130e174f3704d0b5a43553932d1a0c5f90b1b1261050f87f3e57fe60bc9aeb",
+      "form": {
+        "name": "Шкрябин Арсен Суренович",
+        "phone": "+79620502272",
+        "email": "maksim181206@mail.ru",
+        "comment": "ыффыфы",
+        "agreed": true
+      },
+      "createdAt": "2026-04-27T18:13:11.118Z",
+      "updatedAt": "2026-04-27T18:13:59.321Z"
+    }
+  ],
+  "admins": [
+    {
+      "login": "admin",
+      "salt": "0b238c49c3c548f3eaf01f42",
+      "passwordHash": "67138f6a185d65108657b76e6f16bc2e92bf6a4f5239cf10ba1f1c826931ca8b"
+    }
+  ]
+}
